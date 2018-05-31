@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D05-nn-0qv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="09K-Bx-ss1">
+            <objects>
+                <viewController id="D05-nn-0qv" customClass="ViewController" customModule="DepTest" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bp7-b9-fO3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s1" translatesAutoresizingMaskIntoConstraints="NO" id="DFX-jb-pft">
+                                <rect key="frame" x="0.0" y="20" width="375" height="657"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkr-bN-92a">
+                                <rect key="frame" x="134.5" y="180" width="106" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="JxK-uV-7Og"/>
+                                    <constraint firstAttribute="width" secondItem="hkr-bN-92a" secondAttribute="height" multiplier="53:17" id="sfu-ce-Kfn"/>
+                                </constraints>
+                                <state key="normal" title="Consent">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="consentTapped:" destination="D05-nn-0qv" eventType="touchUpInside" id="hzj-8H-cZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rao-I0-omm">
+                                <rect key="frame" x="134.5" y="262" width="106" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1WL-wG-zUF"/>
+                                    <constraint firstAttribute="width" secondItem="Rao-I0-omm" secondAttribute="height" multiplier="53:17" id="RT8-rK-5vd"/>
+                                    <constraint firstAttribute="width" constant="106" id="z4v-0o-WV2"/>
+                                </constraints>
+                                <state key="normal" title="Survey">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="surveyTapped:" destination="D05-nn-0qv" eventType="touchUpInside" id="ZQH-dW-Yv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-oG-ZS4">
+                                <rect key="frame" x="134.5" y="424" width="106" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4qv-oG-ZS4" secondAttribute="height" multiplier="53:17" id="2cJ-zo-6b4"/>
+                                    <constraint firstAttribute="width" constant="106" id="OFZ-eK-MTH"/>
+                                </constraints>
+                                <state key="normal" title="Task 2">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Task2Action:" destination="D05-nn-0qv" eventType="touchUpInside" id="SPq-si-dp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PK-F9-eJn">
+                                <rect key="frame" x="134.5" y="344" width="106" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="BZJ-vm-AaT"/>
+                                    <constraint firstAttribute="width" secondItem="8PK-F9-eJn" secondAttribute="height" multiplier="53:17" id="GCE-M4-0XT"/>
+                                </constraints>
+                                <state key="normal" title="Task 1">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Task1Action:" destination="D05-nn-0qv" eventType="touchUpInside" id="l7i-fR-rDu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30800553781773721" green="0.5679610304078816" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DFX-jb-pft" firstAttribute="centerY" secondItem="B0z-WH-ejj" secondAttribute="centerY" constant="5" id="4yq-ff-VdD"/>
+                            <constraint firstItem="DFX-jb-pft" firstAttribute="centerX" secondItem="B0z-WH-ejj" secondAttribute="centerX" id="MjG-jL-sLx"/>
+                            <constraint firstItem="DFX-jb-pft" firstAttribute="width" secondItem="bp7-b9-fO3" secondAttribute="width" id="Vad-jh-WGC"/>
+                            <constraint firstItem="8PK-F9-eJn" firstAttribute="top" secondItem="Rao-I0-omm" secondAttribute="bottom" constant="48" id="Ygd-0Y-Ocu"/>
+                            <constraint firstItem="Rao-I0-omm" firstAttribute="top" secondItem="hkr-bN-92a" secondAttribute="bottom" constant="48" id="ZaL-Hd-Xl1"/>
+                            <constraint firstItem="Rao-I0-omm" firstAttribute="centerX" secondItem="B0z-WH-ejj" secondAttribute="centerX" id="lPV-gE-fML"/>
+                            <constraint firstItem="DFX-jb-pft" firstAttribute="height" secondItem="bp7-b9-fO3" secondAttribute="height" constant="-10" id="leK-TZ-Tp5"/>
+                            <constraint firstItem="hkr-bN-92a" firstAttribute="centerX" secondItem="B0z-WH-ejj" secondAttribute="centerX" id="q7O-Zi-lxe"/>
+                            <constraint firstItem="DFX-jb-pft" firstAttribute="width" secondItem="bp7-b9-fO3" secondAttribute="height" multiplier="375:667" id="qbm-oe-pWy"/>
+                            <constraint firstItem="4qv-oG-ZS4" firstAttribute="top" secondItem="8PK-F9-eJn" secondAttribute="bottom" constant="46" id="sSR-ca-qyD"/>
+                            <constraint firstItem="8PK-F9-eJn" firstAttribute="centerX" secondItem="B0z-WH-ejj" secondAttribute="centerX" id="yfD-Yc-DQQ"/>
+                            <constraint firstItem="4qv-oG-ZS4" firstAttribute="centerX" secondItem="B0z-WH-ejj" secondAttribute="centerX" id="zQh-DE-w6e"/>
+                            <constraint firstItem="hkr-bN-92a" firstAttribute="top" secondItem="B0z-WH-ejj" secondAttribute="top" constant="160" id="zo1-AW-Z3m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B0z-WH-ejj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ai-8m-s4D" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="s1" width="667" height="1164"/>
+    </resources>
+</document>
